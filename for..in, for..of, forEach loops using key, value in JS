@@ -1,0 +1,32 @@
+for..in
+
+var obj = [{ person: "Riya", age: "22", company: "GUVI" },{ person: "venkat", age: "25", company: "GUVI" }];   
+for (var i in obj)  
+{     
+  for(var j in obj[i])     
+  {           
+    console.log(j+" "+obj[i][j]);    
+  }
+}
+
+
+for..of
+
+var obj = [{ person: "Riya", age: "22", company: "GUVI" },{ person: "venkat", age: "25", company: "GUVI" }];     
+for (var [key,value] of Object.entries(obj))  
+{     
+    {           
+        console.log(value);     
+        
+    }      
+}
+
+
+forEach
+
+var obj = [{ person: "Riya", age: "22", company: "GUVI" },{ person: "venkat", age: "25", company: "GUVI" }]; 
+Object.entries(obj).forEach(([key,value])=>
+{           
+    console.log(obj[key]);     
+}      
+); 
